@@ -1,0 +1,14 @@
+package com.dibimbing1.dibimbing.service;
+
+import com.dibimbing1.dibimbing.model.Barang;
+
+import java.util.List;
+
+public interface BarangServiceStatic {
+    public Barang save(Barang obj);
+    public Barang update(Barang obj);
+    public List<Barang> deleted(Long id);
+    public List<Barang> dataMhs(int row, int page);
+    public Barang findById(long obj);
+
+}
