@@ -1,5 +1,6 @@
 package programmerfadliyandra.belajar.springproperties.environment;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.env.Environment;
@@ -10,10 +11,8 @@ public class EnvironmentTest {
 
     @Test
     void testEnvironment(){
-        environment.getProperty("JAVA_HOME");
-
+        String java_home = environment.getProperty("JAVA_HOME");
     }
-
 
     @SpringBootApplication
     public  static class TestApplication{
